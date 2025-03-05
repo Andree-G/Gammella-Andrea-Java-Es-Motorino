@@ -1,4 +1,5 @@
 
+package Ereditarieta;
 public class Motorino
 {
    private String colore;
@@ -12,6 +13,10 @@ public class Motorino
        this.velocità = velocità;
        this.tipo = tipo;
        this.antifurto = antifurto;
+   }
+   public Motorino()
+   {
+    
    }
 
    public String getColore()

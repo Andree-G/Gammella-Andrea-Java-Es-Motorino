@@ -1,5 +1,5 @@
 
-
+package Ereditarieta;
 public class GestioneMotorino
 {
    public static void main(String[] args)
