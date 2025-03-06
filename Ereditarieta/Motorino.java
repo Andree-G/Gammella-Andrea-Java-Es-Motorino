@@ -1,5 +1,4 @@
 
-package Ereditarieta;
 public class Motorino
 {
    private String colore;
@@ -34,7 +33,6 @@ public class Motorino
    }
    public void setVelocità(double velocità)
    {
-        velocità += 50;
         this.velocità = velocità;
    }
 
@@ -58,8 +56,9 @@ public class Motorino
 
    public void accellera(double incremento)
    {
-       velocità += incremento;
-   }
+      velocità += incremento;
+    }
+
 
    public void acceleraSeAntifurtoNonAttivo(double incremento)
    {

@@ -1,5 +1,4 @@
-package Ereditarieta;
-import Ereditarieta.Motorino;
+
 
 public class MotorinoImmatricolato extends Motorino
 {
@@ -31,5 +30,28 @@ public class MotorinoImmatricolato extends Motorino
    {
         this.targa = targa;
    }
+
+   public void accellera(double incremento)
+   {
+       double s = getVelocità() + incremento;
+   
+       if (s > Maxvelocita) 
+       {
+           setVelocità(Maxvelocita); 
+           System.out.println("Velocità massima raggiunta. Velocità attuale: " + getVelocità());
+       } 
+       else 
+       {
+           setVelocità(s);
+           System.out.println("Velocità aumentata di " + incremento + ". Velocità attuale: " + getVelocità());
+       }
+   }
+   
+    public void mostraDettagli()
+    {
+        super.mostraDettagli();  
+        System.out.println("Max Velocità: " + Maxvelocita);  
+        System.out.println("Targa: " + targa);
+    }
 }
 
